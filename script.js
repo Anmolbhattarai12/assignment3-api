@@ -3,7 +3,7 @@ const catImage = document.getElementById("catImage");
 const infoBox = document.getElementById("info");
 
 const API_KEY = "DEMO-API-KEY";  
-// You can replace DEMO-API-KEY with your own key if you created one
+// Demo Key
 
 btn.addEventListener("click", getCat);
 
@@ -21,10 +21,10 @@ async function getCat() {
 
   const cat = data[0];
 
-  // Display cat image
+  // For Displaying Cat Image
   catImage.src = cat.url;
 
-  // Display extra breed data
+ 
   if (cat.breeds && cat.breeds.length > 0) {
     const breed = cat.breeds[0];
     infoBox.innerHTML = `
@@ -38,5 +38,5 @@ async function getCat() {
   }
 }
 
-// Auto-load once at the start
+// For the Auto-load
 getCat();
