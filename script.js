@@ -21,7 +21,7 @@ async function getCat() {
 
   const cat = data[0];
 
-  // For Displaying Cat Image
+  // For Displaying Images of cat
   catImage.src = cat.url;
 
  
